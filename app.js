@@ -547,8 +547,7 @@
       '<div class="field"><label>' + t("checkout.card") + '</label><input name="card" required inputmode="numeric" placeholder="4242 4242 4242 4242"></div>' +
       '<div class="field-row"><div class="field"><label>' + t("checkout.expiry") + '</label><input name="exp" required placeholder="12/28"></div>' +
       '<div class="field"><label>' + t("checkout.cvc") + '</label><input name="cvc" required placeholder="123"></div></div>' +
-      '<button class="btn btn-primary btn-lg btn-block" type="submit">' + icon("lock") + " " + t("checkout.pay") + " " + money(total) + "</button>" +
-      '<div class="foot-note" style="justify-content:center;margin-top:12px">' + icon("shield-check") + " " + t("checkout.demo") + "</div></form>" +
+      '<button class="btn btn-primary btn-lg btn-block" type="submit">' + icon("lock") + " " + t("checkout.pay") + " " + money(total) + "</button></form>" +
       '<aside class="summary" style="position:static"><h3>' + t("checkout.orderSummary") + "</h3>" + summary +
       '<div class="foot-row total" style="border-top:1px solid var(--line-2);padding-top:14px;margin-top:8px"><span class="lbl">' + t("cart.total") + '</span><span class="val">' + money(total) + "</span></div></aside></div></div></section>"
     );
