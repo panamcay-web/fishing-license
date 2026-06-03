@@ -443,7 +443,7 @@
       '<div class="footer-col"><h4>' + t("footer.col.licenses") + "</h4>" + lic + '<a href="#/licenses">' + t("footer.allLicenses") + "</a></div>" +
       '<div class="footer-col"><h4>' + t("footer.col.info") + "</h4>" + info + "</div>" +
       '<div class="footer-col"><h4>' + t("footer.col.support") + '</h4><a href="#/help">' + t("nav.help") + '</a><a href="#/account">' + t("nav.account") + '</a><a href="#/cart">' + t("nav.cart") + '</a><a href="#/help">' + t("footer.contact") + "</a></div>" +
-      "</div><div class='footer-bottom'><div style='flex:1'><p>© " + new Date().getFullYear() + " All Fishing Licenses — " + t("footer.rights") + "</p><div style='margin-top:10px;font-size:12px;display:flex;gap:16px;flex-wrap:wrap'><a href='#/terms' style='color:#aebfda'>Terms of Service</a><a href='#/privacy' style='color:#aebfda'>Privacy Policy</a><a href='#/refund' style='color:#aebfda'>Refund Policy</a><a href='#/cookies' style='color:#aebfda'>Cookies Policy</a><a href='#/contact' style='color:#aebfda'>Contact Us</a></div><div style='margin-top:16px;font-size:12px;color:#8ca1c4'><p style='margin:0;font-weight:500'>TechnoDucks Inc</p><p style='margin:4px 0 0;line-height:1.5'>5348 Vegas Drive # 1485<br/>Las Vegas, NV 89108</p></div></div></div></footer>"
+      "</div><div class='footer-bottom'><div style='flex:1'><p>© " + new Date().getFullYear() + " All Fishing Licenses — " + t("footer.rights") + "</p><div style='margin-top:10px;font-size:12px;display:flex;gap:16px;flex-wrap:wrap'><a href='#/terms' style='color:#aebfda'>Terms of Service</a><a href='#/privacy' style='color:#aebfda'>Privacy Policy</a><a href='#/refund' style='color:#aebfda'>Refund Policy</a><a href='#/cookies' style='color:#aebfda'>Cookies Policy</a><a href='#/contact' style='color:#aebfda'>Contact Us</a></div></div></div></footer>"
     );
   }
 
@@ -540,16 +540,9 @@
       '<section class="page"><div class="container">' +
       crumbs([{ href: "#/", label: t("common.home") }, { href: "#/cart", label: t("cart.title") }, { label: t("checkout.title") }]) +
       '<div class="page-head"><h1>' + t("checkout.title") + "</h1><p>" + t("checkout.subtitle") + "</p></div>" +
-      '<div class="form-wrap"><form class="form-card" data-form="checkout">' +
-      '<h3 style="margin-bottom:18px">' + t("checkout.payTitle") + "</h3>" +
-      '<div class="field"><label>' + t("checkout.name") + '</label><input name="name" required placeholder="Jean Dupont"></div>' +
-      '<div class="field"><label>' + t("checkout.email") + '</label><input type="email" name="email" required placeholder="jean@email.fr"></div>' +
-      '<div class="field"><label>' + t("checkout.card") + '</label><input name="card" required inputmode="numeric" placeholder="4242 4242 4242 4242"></div>' +
-      '<div class="field-row"><div class="field"><label>' + t("checkout.expiry") + '</label><input name="exp" required placeholder="12/28"></div>' +
-      '<div class="field"><label>' + t("checkout.cvc") + '</label><input name="cvc" required placeholder="123"></div></div>' +
-      '<button class="btn btn-primary btn-lg btn-block" type="submit">' + icon("lock") + " " + t("checkout.pay") + " " + money(total) + "</button></form>" +
-      '<aside class="summary" style="position:static"><h3>' + t("checkout.orderSummary") + "</h3>" + summary +
-      '<div class="foot-row total" style="border-top:1px solid var(--line-2);padding-top:14px;margin-top:8px"><span class="lbl">' + t("cart.total") + '</span><span class="val">' + money(total) + "</span></div></aside></div></div></section>"
+      '<div class="form-wrap"><div class="summary"><h3>' + t("checkout.orderSummary") + "</h3>" + summary +
+      '<div class="foot-row total" style="border-top:1px solid var(--line-2);padding-top:14px;margin-top:8px"><span class="lbl">' + t("cart.total") + '</span><span class="val">' + money(total) + "</span></div>" +
+      '<a class="btn btn-primary btn-lg btn-block" href="#/licenses" style="margin-top:20px">' + t("cart.browse") + "</a></div></div></div></section>"
     );
   }
 
