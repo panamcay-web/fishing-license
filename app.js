@@ -126,7 +126,7 @@
     {
       id: "women", icon: "woman", price: 35,
       name: { en: "Women’s Discovery", fr: "Découverte Femme" },
-      cardTitle: { en: "Women’s Information License", fr: "Carte Découverte Femme" },
+      cardTitle: { en: "Women’s License", fr: "Carte Découverte Femme" },
       sub: { en: "For women anglers", fr: "Pour les femmes" },
       period: { en: "per year", fr: "par an" },
       desc: {
